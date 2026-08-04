@@ -1,0 +1,11 @@
+---
+layout: "wrapper"
+author: "junejune"
+---
+{% for post in site.posts %}
+	<li><a style="{%if page.url == post.url %}color:black;{%endif%}" href="{{ post.url}}">{{ post.title}}</a><li>
+{% endfor %}
+<h2>{{ page.title}}</h2>
+<hr>
+
+{{ content }}
